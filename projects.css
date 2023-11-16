@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Body ------------------------------------------------- */
+
+body{
+    margin: 0;
+    padding-right: 14%;
+    padding-left: 14%;
+    background-color: #1f1f1f;
+}
+
+.projects{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Page Title ------------------------------------------------- */
+
+p.pageTitle{
+    color: white;
+    font-family: 'Helvetica Neue', bold;
+    font-weight: 700;
+    font-size: 3vw;
+    letter-spacing: 4px;
+
+    margin: 0;
+    margin-bottom: 3.5%;
+    padding: 0;
+    height:fit-content;
+}
+
+
+/* Content Box ------------------------------------------------- */
+
+.content{
+    display: flex;
+    flex-wrap: wrap;                        /* Allow gallery squares to wrap to the next line */
+    justify-content: space-between;         /* Adjust the spacing between gallery squares */
+    gap: 5%;                                
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: -5%;
+}
+
+.imageGallery{
+    width: auto;
+    height: auto;
+    
+    max-width: 100%;
+    max-height: 100%;
+
+    margin: auto;
+    margin-bottom: 7%;
+    border: 1px solid white;
+}
+
+.gallerySquare{
+    flex-basis: 47.5%;                      /* Set the desired width for each gallery square */
+    padding: 4%;
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.gallerySquare:hover{
+    background-color: #515151;
+    cursor: pointer;
+}
+
+.galleryTitle{
+    font-family: 'Helvetica Neue', bold;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-bottom: 4%;
+}
+
+.gallerySubtitle{
+    font-family: 'Helvetica Neue', bold;
+    color: white;
+    font-size: 1vw;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 0;
+    height: auto;
+
+}

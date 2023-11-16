@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Setup -->
+<head>
+    <!-- Settings -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Files -->
+    <link rel="stylesheet" href="./project.css">    <!-- (CSS) Stylesheet: Project   -->
+    <link rel="stylesheet" href="./header.css">     <!-- (CSS) Stylesheet: Header -->
+    <link rel="stylesheet" href="./footer.css">     <!-- (CSS) Stylesheet: Footer -->
+
+    <script src="carousel.js"></script>                 <!-- (JavaScript) Script: Project  -->
+    <title>Project</title>
+
+    <!-- Include: Header / Footer  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#carousel").load("carousel.html");
+        })
+    </script>
+
+</head>
+
+<!-- Project Page -->
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <section class="home">
+        <!-- Content -->
+        <div class="content">
+
+            <p class="pageTitle" id="title">project</p>
+
+            <!-- Project Header -->
+            <div class="projectHeader">
+
+                <!-- Project Banner -->
+                <div class="projectBannerContainer">
+                    <img src="images/projectBanners/1.png" class="projectBannerImage" loading="lazy">
+                </div>
+
+                <!-- Project Information -->
+                <div class="projectInformation"> 
+                    <div class="projectTitleContainer">
+                        <h1 class="projectTitleText">"knight, dragons, princess"</h1>
+                        <p class="projectTypeText">coding in python</p>
+                    </div>
+
+                    <div class="projectDescriptionContainer">
+                        <p class="paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus in hac habitasse platea dictumst quisque. Enim sed faucibus turpis in. Purus viverra accumsan in nisl nisi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Carousel -->
+            <div id="carousel"></div>
+
+            <!-- Project Details -->
+            <div class="projectDetails">
+                <div class="projectDetailsContainer">
+                    <h2 class="projectDetailsSubtitle">notes</h2>
+                    <ul>
+                        <li class="projectNotesBullet">lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li class="projectNotesBullet">quis auctor elit sed vulputate mi sit amet mauris commodo. lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li class="projectNotesBullet">vulputate mi sit amet.</li>
+                    </ul>
+                </div>
+                <div class="projectDetailsContainer">
+                    <h2 class="projectDetailsSubtitle">reflection</h2>
+                    <p class="reflectionText paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus in hac habitasse platea dictumst quisque. Enim sed faucibus turpis in. Purus viverra accumsan in nisl nisi. Cursus eget nunc scelerisque viverra mauris. Justo eget magna fermentum iaculis. Quis auctor elit sed vulputate mi sit amet mauris commodo. Bibendum arcu vitae elementum curabitur vitae nunc sed.</p>
+                </div>
+            </div>
+
+            <!-- Project Extras -->
+            <div class="projectExtras">
+                
+                <!-- Project Resources -->
+                <div class="projectExtrasContainer resources">
+                    <h2 class="projectDetailsSubtitle extrasSubtitle">resources</h2>
+                    <p class="paragraphText">> 
+                        <a class="resourceLink" href="#">github repository</a> 
+                        / 
+                        <a class="resourceLink" href="#">presentation</a>
+                        /
+                    </p>
+                </div>
+
+                <!-- Project Skills -->
+                <div class="projectExtrasContainer">
+                    <h2 class="projectDetailsSubtitle extrasSubtitle">skills</h2>
+                    <p class="reflectionText paragraphText">> python programming 👨🏻‍💻 / “programming” software ✏️ / game development 👾 /</p>
+                </div>
+            </div>
+        
+        </div>
+            
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

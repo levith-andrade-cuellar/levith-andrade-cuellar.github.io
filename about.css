@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Body ------------------------------------------------- */
+
+body{
+    margin: 0;
+    padding-right: 14%;
+    padding-left: 14%;
+    background-color: #1f1f1f;
+}
+
+
+/* Page Title ------------------------------------------------- */
+
+p.pageTitle{
+    color: white;
+    font-family: 'Helvetica Neue', bold;
+    font-weight: 700;
+    font-size: 3vw;
+    letter-spacing: 4px;
+
+    margin: 0;
+    margin-bottom: 3.5%;
+    padding: 0;
+    height:fit-content;
+}
+
+
+/* Content Box ------------------------------------------------- */
+
+.content{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid white;
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+}
+
+
+/* Photo Section ------------------------------ */
+
+.photoSection{
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.photoDescription{
+    border-top: 1px solid white;
+    padding: 10%;
+    height: auto;
+    overflow: hidden;
+}
+
+.photoCarousel{
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 66%) 1fr;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.photosCarousel{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    
+    padding: 15%;
+}
+
+.divButtonCarousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.divButtonCarousel:hover{
+    background-color: #515151;
+    cursor: pointer;
+}
+
+button.buttonCarousel{
+    color: white;
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+button.buttonCarousel:hover{
+    font-style: normal;
+    font-weight: 200;
+}
+
+.imageCarousel{
+    margin: auto;
+    padding: 0;
+
+    height: auto;
+    width: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    border: 1px solid white;
+}
+
+.imageCarousel:hover{
+    cursor: pointer;
+}
+
+/* Biography Section --------------------------- */
+
+.bioSection{
+    border-left: 1px solid white;
+    padding: 10%;
+}
+
+p.name{
+    font-family: 'Helvetica Neue', bold;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 3px;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
+
+p.birthlocation{
+    font-family: 'Helvetica Neue';
+    font-weight: 200;
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 7%;
+}
+
+p.longText{
+    text-align: justify;
+    color: #CBCBCB;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8vw;
+    font-weight: 200;
+    line-height: 300%;
+    letter-spacing: 2px;
+    text-overflow: ellipsis;
+    max-height: auto;
+
+    height: auto;
+
+    margin: 0;
+    margin-bottom: -2%;
+    padding: 0;
+}
+
+

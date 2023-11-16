@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Body ------------------------------------------------- */
+
+body{
+    margin: 0;
+    padding-right: 14%;
+    padding-left: 14%;
+    background-color: #1f1f1f;
+}
+
+/* Content Box ------------------------------------------------- */
+/* Divided in two, dynamically adjusts to window size. */
+
+.content{                   /* Note: Rectangle divided into two squares, height is half of length. */
+    width: 100%;    
+    aspect-ratio: 2/1;      
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+}
+
+.box{
+    width:100%;
+    height:100%;
+    border:1px solid white;
+    border-right: 0;
+    padding-bottom: 0;
+    overflow: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 87.5% 12.5%;
+    overflow: hidden;
+}
+
+/* Title ------------------------------------------------- */
+
+.title{
+    padding: 8%;              
+    display: flex;
+    align-items: flex-end;
+}
+
+h1.titleText{
+    color:white;
+    font-family: 'Helvetica Neue', bold;
+    font-size: 5.5vw;         
+    letter-spacing: 4px;
+    line-height: 110%;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin: 0;
+    margin-left: -1%;       /* Note: Perfectly align text to left */
+    margin-bottom: -3%;     /* Note: Perfectly align text to bottom */
+    padding: 0;
+}
+
+/* Dropdown ------------------------------------------------- */
+
+nav{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    font-size: 1vw;
+    letter-spacing: 1px;
+
+    line-height: 420%;
+    
+
+    cursor: pointer;
+}
+
+ul li{                              /* List Item ---------------------------- */
+    display: inline-block;
+    
+    width: 100%;
+    height: 100%;
+
+    text-indent: 8%;
+}
+
+ul li a{                            /* Item Anchor -------------------------- */
+    display: block;
+    border-top: 1px solid white;
+    background-color: #1f1f1f;
+    color: #515151;
+    text-decoration: none;
+
+    width: 100%;
+    height: 100%;
+}
+
+ul li a.skills{ 
+    border-bottom: 1px solid white;
+}
+
+a.searchDatabase{
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    font-size: 1vw;
+    letter-spacing: 4px;
+    color:white;
+}
+
+ul li a:hover{                      /* Item Anchor - Hover ------------------ */
+    background-color: #515151;
+    color:white;
+}
+
+ul li ul.dropdown li{               /* Dropdown ----------------------------- */
+    display: block;
+}
+
+ul li ul.dropdown{                  /* List Item (Dropdown) ----------------- */
+    width:100%;
+    display: none;
+    z-index: 999;
+    transform: translateY(-703.5%);         /* Note: Flip dropdown upside down. 3% extra to align with existing border.*/
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+/* Table ------------------------------------------------- */
+
+table{
+    border: 1px solid white;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.tr, td{
+    border: 1px solid white;
+    margin: 0px;
+    padding: 8px;
+
+    text-align: center;
+    width: 12.5%;
+    height: 12.5%;
+
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.4vw;               
+    font-weight: 200;
+}
+
+td:empty{                           /* Note: Empty cell behavior. */
+    background-color: #515151;
+}
+
+td:hover{                           /* Note: Hover cell behavior. */
+    background-color: #515151;
+}
+
+/* Scaling ------------------------------------------------- */
+
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+  }

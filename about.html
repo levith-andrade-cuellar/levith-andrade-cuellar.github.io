@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Setup -->
+<head>
+    <!-- Settings -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Files -->
+    <link rel="stylesheet" href="./about.css">      <!-- (CSS) Stylesheet: Home      -->
+    <link rel="stylesheet" href="./header.css">     <!-- (CSS) Stylesheet: Header    -->
+    <link rel="stylesheet" href="./footer.css">     <!-- (CSS) Stylesheet: Footer    -->
+    <script src="carousel.js"></script>                <!-- (JavaScript) Script: About  -->
+    <title>About</title>
+
+    <!-- Include: Header / Footer  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        })
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <section class="projects">
+        <p class="pageTitle" id="title">about</p>
+
+        <div class="content">
+
+            <!-- Photo Section-->
+            <div class="photoSection">
+                
+                <!-- Carousel -->
+                <div class="photoCarousel">
+                    <div class="divButtonCarousel" onclick="changeCarouselSlide('left')"><button class="buttonCarousel">L</button></div>
+                    <div class="photosCarousel">
+                        <img src="images/about/0.jpg" class="imageCarousel" id="imageCarousel" loading="lazy">
+                    </div>
+                    <div class = "divButtonCarousel" onclick="changeCarouselSlide('right')"><button class="buttonCarousel">R</button></div>
+                </div>
+
+                <!-- Description -->
+                <div class="photoDescription">
+                    <p class="longText" id="photoDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus in hac habitasse platea dictumst quisque. Cursus in hac habitasse.</p>
+                </div>
+            </div>
+            
+            <!-- Biography Section-->
+            <div class="bioSection">
+                <p class="name">levith andrade cuellar</p>
+                <p class="birthlocation">méxico (b.2002)</p>
+                <p class="longText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus in hac habitasse platea dictumst quisque. Enim sed faucibus turpis in. Purus viverra accumsan in nisl nisi. Cursus eget nunc scelerisque viverra mauris. Justo eget magna fermentum iaculis. Quis auctor elit sed vulputate mi sit amet mauris commodo. Bibendum arcu vitae elementum curabitur vitae nunc sed. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non.</p>
+            </div>
+            
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

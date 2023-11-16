@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Body ------------------------------------------------- */
+
+body{
+    margin: 0;
+    padding-right: 14%;
+    padding-left: 14%;
+    background-color: #1f1f1f;
+}
+
+p.paragraphText{
+    color: #CBCBCB;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8vw;
+    font-weight: 200;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 300%;
+
+    margin: 0;
+
+    width: auto;
+    height: auto;
+}
+
+/* Page Title ------------------------------------------------- */
+
+p.pageTitle{
+    color: white;
+    font-family: 'Helvetica Neue', bold;
+    font-weight: 700;
+    font-size: 3vw;
+    letter-spacing: 4px;
+
+    margin: 0;
+    margin-bottom: 3.5%;
+    padding: 0;
+    height:fit-content;
+}
+
+/* Project Header ------------------------------------------------- */
+
+.projectHeader{
+    display: grid;
+    grid-template-rows: auto auto;
+    border: 1px solid white;
+    width: auto;
+    height: auto;
+    margin-bottom: 5%;
+}
+/* Project Information ------------------------------------------------- */
+
+.projectInformation{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+/* Project Title ------------------------------------------------- */
+
+.projectTitleContainer{
+    padding: 4%;
+    border-right: 1px solid white;
+    flex-basis: 50%;
+}
+
+.projectTitleText{
+    color: white;
+    font-family: 'Helvetica Neue', bold;
+    font-size: 2vw;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-bottom: 8%;
+}
+
+.projectTypeText{
+    color: white;
+    font-family: 'Helvetica Neue', bold;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+/* Project Description ------------------------------------------------- */
+
+.projectDescriptionContainer{
+    padding: 4%;
+    flex-basis: 50%;
+}
+
+
+/* Project Banner ------------------------------------------------- */
+
+.projectBannerContainer{
+    padding: 4%;
+    padding-right: 12%;
+    padding-left: 12%;
+    border-bottom: 1px solid white;
+    width: auto;
+    height: auto;
+}
+
+.projectBannerImage{
+    border: 1px solid white;
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Project Carousel ------------------------------------------------- */
+
+.photoCarousel{
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 66%) 1fr;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-bottom: 5%;
+}
+
+.photosCarousel{
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    
+    padding: 6%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.divButtonCarousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+
+    border: 1px solid white;
+}
+
+.leftCarouselButton{
+    margin-right: 30%
+}
+
+.rightCarouselButton{
+    margin-left: 30%;
+}
+
+.divButtonCarousel:hover{
+    background-color: #515151;
+    cursor: pointer;
+}
+
+button.buttonCarousel{
+    color: white;
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+button.buttonCarousel:hover{
+    font-style: normal;
+    font-weight: 200;
+}
+
+.imageCarousel{
+    margin: auto;
+    padding: 0;
+
+    height: auto;
+    width: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    border: 1px solid white;
+}
+
+.imageCarousel:hover{
+    cursor: pointer;
+}
+
+/* Project Details ------------------------------------------------- */
+
+.projectDetails{
+    display: flex;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+.projectDetailsContainer{
+    border: 1px solid white;
+    flex-basis: 50%;
+    padding: 4%;
+}
+
+.projectDetailsSubtitle{
+    color: white;
+    font-family: 'Helvetica Neue', bold;
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-bottom: 8%;
+}
+
+.reflectionText{
+    font-size: 0.5vw;
+}
+
+.projectNotesBullet{
+    color: #CBCBCB;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8vw;
+    font-weight: 200;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 300%;
+
+    margin: 0;
+    margin-bottom: 5%;
+
+    width: auto;
+    height: auto;
+}
+
+ul{
+    margin-block: 0;
+}
+
+/* Project Extras ------------------------------------------------- */
+
+.projectExtrasContainer{
+    border: 1px solid white;
+    padding: 4%;
+}
+
+.extrasSubtitle{
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.resources{
+    margin-bottom: 5%;
+}
+
+.resourceLink{
+    border-bottom: 0.001vw solid white;
+    padding-bottom: 0.2%;
+    
+}

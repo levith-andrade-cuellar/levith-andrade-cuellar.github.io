@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Setup -->
+<head>
+    <!-- Settings -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Files -->
+    <link rel="stylesheet" href="./projects.css">      <!-- (CSS) Stylesheet: Home      -->
+    <link rel="stylesheet" href="./header.css">     <!-- (CSS) Stylesheet: Header    -->
+    <link rel="stylesheet" href="./footer.css">     <!-- (CSS) Stylesheet: Footer    -->
+    <script src="about.js"></script>                <!-- (JavaScript) Script: About  -->
+    <title>projects</title>
+
+    <!-- Include: Header / Footer  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        })
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <section class="projects">
+        <p class="pageTitle">projects</p>
+
+        <div class="content">
+
+            <div class="gallerySquare">
+
+                <img src="images/projects/3.jpg" class="imageGallery" loading="lazy">
+                <p class="galleryTitle">abeja, decentralized application project</p>
+                <p class="gallerySubtitle">high school project</p>
+
+            </div>
+
+            <div class="gallerySquare">
+
+                <a href="project.html">
+                <img src="images/projects/1.jpg" class="imageGallery" loading="lazy">
+                <p class="galleryTitle">"knight, dragons, princess"</p>
+                <p class="gallerySubtitle">coding in python</p>
+                </a>
+
+            </div>
+
+            <div class="gallerySquare">
+
+                <img src="images/projects/0.jpg" class="imageGallery" loading="lazy">
+                <p class="galleryTitle">personal website with html, css and js</p>
+                <p class="gallerySubtitle">web development</p>
+
+            </div>
+
+
+            <div class="gallerySquare">
+
+                <img src="images/projects/2.jpg" class="imageGallery" loading="lazy">
+                <p class="galleryTitle">second year representative at nyuad</p>
+                <p class="gallerySubtitle">leadership</p>
+
+            </div>
+
+            <div class="gallerySquare">
+
+                <img src="images/projects/3.jpg" class="imageGallery" loading="lazy">
+                <p class="galleryTitle">second year representative at nyuad</p>
+                <p class="gallerySubtitle">leadership</p>
+
+            </div>
+
+            <div class="gallerySquare">
+
+                <img src="images/projects/1.jpg" class="imageGallery" loading="lazy">
+                <p class="galleryTitle">second year representative at nyuad</p>
+                <p class="gallerySubtitle">leadership</p>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

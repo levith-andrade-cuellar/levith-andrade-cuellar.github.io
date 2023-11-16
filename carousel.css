@@ -1,0 +1,60 @@
+.photoCarousel{
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 66%) 1fr;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.photosCarousel{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    
+    padding: 15%;
+}
+
+.divButtonCarousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.divButtonCarousel:hover{
+    background-color: #515151;
+    cursor: pointer;
+}
+
+button.buttonCarousel{
+    color: white;
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+button.buttonCarousel:hover{
+    font-style: normal;
+    font-weight: 200;
+}
+
+.imageCarousel{
+    margin: auto;
+    padding: 0;
+
+    height: auto;
+    width: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    border: 1px solid white;
+}
+
+.imageCarousel:hover{
+    cursor: pointer;
+}

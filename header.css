@@ -1,0 +1,65 @@
+/* Header / Navigation Bar ------------------------------------------------- */
+
+h3{
+    color: white;
+    font-family: 'Helvetica Neue', bold;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.navigationBar{
+    margin-top: 3%;
+    margin-bottom: 3.5%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    width: 100%;
+
+    align-items: baseline;
+}
+
+.navigationButtons{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 0;
+}
+
+button{
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1vw;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+button.start{
+    display: flex;
+    justify-content: start;
+}
+
+button:hover{
+    font-weight: 500;
+    font-style: italic;
+}
+
+button.end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 0;
+}
