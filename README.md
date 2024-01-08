@@ -25,3 +25,5 @@ Currently under construction!
 Click on this [**`"link"`**](https://levith-andrade-cuellar.github.io/index.html) to access the website.
 
 ## Preview 
+<p>Here's what the home or landing page looks like —</p>
+<img src="/preview/home.png" alt="Home Screen" width="400"/>
